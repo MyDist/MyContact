@@ -89,7 +89,8 @@ public class HomeContactActivity extends Activity {
 		alpha = (QuickAlphabeticBar)this.acbuwaPage.findViewById(R.id.fast_scroller);
 		asyncQuery = new MyAsyncQueryHandler(getContentResolver());
 		init();
-
+		//隐藏创建群组
+		menuBtn.setVisibility(View.GONE);
 		menuBtn.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 				scrollView.clickMenuBtn(HomeContactActivity.this);
