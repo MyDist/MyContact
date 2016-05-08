@@ -2,7 +2,7 @@ package cn.lny.bean;
 
 
 public class CallLogBean {
-
+//rweahi
 	private int id;
 	private String name;//名称
 	private String number;//号码
