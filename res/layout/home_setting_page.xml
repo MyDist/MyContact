@@ -33,10 +33,12 @@
         android:fastScrollEnabled="true"
         android:soundEffectsEnabled="true" /> --> 
 	<Button 
+	    android:id="@+id/backup_contact_button"
 	    android:layout_height="wrap_content"
 	    android:layout_width="match_parent"
 	    android:text="备份"/>
 	<Button 
+	    android:id="@+id/recover_contact_button"
 	    android:layout_height="wrap_content"
 	    android:layout_width="match_parent"
 	    android:text="恢复"/>
