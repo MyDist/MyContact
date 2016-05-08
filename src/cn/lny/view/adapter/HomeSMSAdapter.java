@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import xu.ye.R;
+import cn.lny.R;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;

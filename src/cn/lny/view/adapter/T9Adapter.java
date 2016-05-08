@@ -3,7 +3,7 @@ package cn.lny.view.adapter;
 import java.util.ArrayList;
 import java.util.List;
 
-import xu.ye.R;
+import cn.lny.R;
 import android.content.Context;
 import android.text.Html;
 import android.text.TextUtils;

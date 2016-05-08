@@ -1,7 +1,7 @@
 package cn.lny.view.ui;
 
 import java.util.HashMap;
-import xu.ye.R;
+import cn.lny.R;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Canvas;

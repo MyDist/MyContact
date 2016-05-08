@@ -2,7 +2,7 @@ package cn.lny.view.adapter;
 
 import java.util.List;
 
-import xu.ye.R;
+import cn.lny.R;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;

@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import xu.ye.R;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.AsyncQueryHandler;
@@ -31,6 +31,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
+import cn.lny.R;
 import cn.lny.bean.ContactBean;
 import cn.lny.bean.GroupBean;
 import cn.lny.uitl.BaseIntentUtil;
@@ -145,20 +146,12 @@ public class HomeContactActivity extends Activity {
 		return super.onKeyDown(keyCode, event);
 	}	
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	@Override
+	protected void onResume() {
+		super.onResume();
+		init();
+		startReceiver1();
+	}
 
 	/**
 	 * 数据库异步查询类AsyncQueryHandler

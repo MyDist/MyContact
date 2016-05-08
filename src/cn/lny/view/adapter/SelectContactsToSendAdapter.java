@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.regex.Pattern;
 
-import xu.ye.R;
+import cn.lny.R;
 import android.content.ContentUris;
 import android.content.Context;
 import android.graphics.Bitmap;

@@ -1,6 +1,6 @@
 package cn.lny.view.ui;
 
-import xu.ye.R;
+import cn.lny.R;
 import android.content.Context;
 import android.os.Handler;
 import android.util.AttributeSet;

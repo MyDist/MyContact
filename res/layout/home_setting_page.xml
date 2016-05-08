@@ -15,10 +15,7 @@
             style="@style/topbar_text"
             android:text="个人中心" />
 
-        <Button
-            android:id="@+id/addContactBtn"
-            style="@style/topbar_right_btn"
-            android:background="@drawable/setting_btn" />
+       
     </RelativeLayout>
 
   <!--   <ListView
@@ -43,7 +40,9 @@
 	    android:layout_width="match_parent"
 	    android:text="恢复"/>
 	<Button 
+	    android:onClick="click1"
 	    android:layout_height="wrap_content"
 	    android:layout_width="match_parent"
-	    android:text="更改密码"/>
+	    android:text="密码"/>
+	
 </LinearLayout>

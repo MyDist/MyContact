@@ -1,6 +1,7 @@
 package cn.lny.view;
 
-import xu.ye.R;
+import cn.lny.R;
+import a_vcard.android.util.Log;
 import android.app.TabActivity;
 import android.content.Intent;
 import android.graphics.BitmapFactory;
@@ -17,6 +18,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TabHost;
 import android.widget.TabHost.OnTabChangeListener;
+import cn.lny.uitl.SharedPreferencesUtil;
 import cn.lny.view.other.SystemScreenInfo;
 import cn.lny.view.ui.AnimationTabHost;
 import android.widget.TabWidget;
@@ -34,13 +36,12 @@ public class HomeTabHostAcitivity extends TabActivity {
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
-		setContentView(R.layout.main_hometabhost);
 
+		setContentView(R.layout.main_hometabhost);
+		
 		SystemScreenInfo.getSystemInfo(HomeTabHostAcitivity.this);
 
 		InitImageView();
-
 
 		mTabWidget = (TabWidget) findViewById(android.R.id.tabs);
 		mTabHost = (AnimationTabHost) findViewById(android.R.id.tabhost);
@@ -52,12 +53,13 @@ public class HomeTabHostAcitivity extends TabActivity {
 		}, 300);
 
 		init();
+
 	}
 
-	private int getImageId(int index, boolean isSelect){
+	private int getImageId(int index, boolean isSelect) {
 		int result = -1;
 		switch (index) {
-		case 0: 
+		case 0:
 			result = isSelect ? R.drawable.tab_dial_selected : R.drawable.tab_dial_normal;
 			break;
 		case 1:
@@ -96,7 +98,7 @@ public class HomeTabHostAcitivity extends TabActivity {
 		setIndicator("信息", 2, new Intent(this, HomeSMSActivity.class), R.drawable.tab_sms_normal);
 		setIndicator("设置", 3, new Intent(this, HomeSettintActivity.class), R.drawable.tab_settings_normal);
 		mTabHost.setOpenAnimation(true);
-//		onPageSelected(1);
+		// onPageSelected(1);
 	}
 
 	private void setIndicator(String ss, int tabId, Intent intent, int image_id) {
@@ -126,7 +128,7 @@ public class HomeTabHostAcitivity extends TabActivity {
 
 		int one = offset * 2 + bmpW;
 		Animation animation = null;
-		animation = new TranslateAnimation(one * currIndex, one * arg0 , 0, 0);
+		animation = new TranslateAnimation(one * currIndex, one * arg0, 0, 0);
 		currIndex = arg0;
 		animation.setFillAfter(true);
 		animation.setDuration(300);
